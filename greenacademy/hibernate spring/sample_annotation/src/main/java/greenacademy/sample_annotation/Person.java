@@ -16,11 +16,7 @@ import javax.persistence.Table;
 import javax.persistence.UniqueConstraint;
 
 @Entity
-@Table(name = "person", catalog = "person_email", uniqueConstraints = {
-		@UniqueConstraint(columnNames = "FIRSTNAME"),
-		@UniqueConstraint(columnNames = "LASTNAME"),
-		@UniqueConstraint(columnNames = "BIRTHDAY")
-})
+@Table(name = "person", catalog = "person_email")
 
 public class Person implements java.io.Serializable {
 	private static final long serialVersionUID = 1L;
